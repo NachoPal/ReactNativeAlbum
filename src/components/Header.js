@@ -3,15 +3,13 @@ import React, {Component} from 'react';
 import {Text, View, StyleSheet} from 'react-native';
 
 // Make a component
-class Header extends Component {
-  render () {
-    return(
-      <View style={styles.viewHeader}>
-        <Text style={styles.textHeader}>{this.props.text}</Text>
-      </View>
-    );
-  };
-}
+const Header = () =>{
+  return(
+    <View style={styles.viewHeader}>
+      <Text style={styles.textHeader}>Album</Text>
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
   viewHeader:{
